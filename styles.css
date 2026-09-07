@@ -403,19 +403,21 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -.02em; line-height: 1.15; }
 .header-call { display: none; justify-self: end; }
 @media(min-width:1024px){ .header-call { display: inline-flex; } }
 /* Full-width Provider Disclosure */
-.footer-disclosure {
+.footer-grid .footer-disclosure {
+  grid-column: 1 / -1 !important;
   width: 100%;
+  max-width: 100%;
   margin-top: 2rem;
   padding-top: 1.5rem;
   border-top: 1px solid rgba(255,255,255,.2);
-  grid-column: 1 / -1;
+  box-sizing: border-box;
 }
 
-.footer-disclosure h4 {
+.footer-grid .footer-disclosure h4 {
   margin-bottom: .75rem;
 }
 
-.footer-disclosure p {
+.footer-grid .footer-disclosure p {
   width: 100%;
   max-width: 100%;
   margin: 0;
