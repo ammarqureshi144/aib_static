@@ -402,3 +402,24 @@ h1, h2, h3, h4 { font-weight: 700; letter-spacing: -.02em; line-height: 1.15; }
 .ft-legal a:hover { color: var(--pink); }
 .header-call { display: none; justify-self: end; }
 @media(min-width:1024px){ .header-call { display: inline-flex; } }
+/* Full-width Provider Disclosure */
+.footer-disclosure {
+  width: 100%;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255,255,255,.2);
+  grid-column: 1 / -1;
+}
+
+.footer-disclosure h4 {
+  margin-bottom: .75rem;
+}
+
+.footer-disclosure p {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  font-size: .75rem !important;
+  line-height: 1.6;
+  color: rgba(255,255,255,.75) !important;
+}
