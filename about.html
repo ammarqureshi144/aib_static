@@ -34,6 +34,58 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   gtag('config', 'AW-18173008666');
 </script>
 
+<!-- ===== Floating Contact Button styles ===== -->
+<style>
+  .floating-call-btn{
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 9999;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    background: linear-gradient(135deg,#3a2e6e,#241c4a);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 999px;
+    border: 2px solid rgba(255,255,255,0.18);
+    box-shadow: 0 0 0 2px rgba(255,105,180,0.25), 0 0 22px rgba(255,105,180,0.55), 0 8px 20px rgba(0,0,0,0.35);
+    transition: transform .25s ease, box-shadow .25s ease;
+    animation: floatPulse 2.6s ease-in-out infinite;
+    white-space: nowrap;
+  }
+  .floating-call-btn:hover{
+    transform: scale(1.06);
+    box-shadow: 0 0 0 2px rgba(255,105,180,0.4), 0 0 30px rgba(255,105,180,0.8), 0 10px 24px rgba(0,0,0,0.4);
+  }
+  .floating-call-btn .fc-icon{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width: 26px;
+    height: 26px;
+    background: #ff2d78;
+    border-radius: 50%;
+    font-size: 13px;
+  }
+  @keyframes floatPulse{
+    0%, 100% { box-shadow: 0 0 0 2px rgba(255,105,180,0.25), 0 0 18px rgba(255,105,180,0.5), 0 8px 20px rgba(0,0,0,0.35); }
+    50%      { box-shadow: 0 0 0 2px rgba(255,105,180,0.45), 0 0 30px rgba(255,105,180,0.85), 0 8px 20px rgba(0,0,0,0.35); }
+  }
+  @media (max-width: 640px){
+    .floating-call-btn{
+      font-size: 14px;
+      padding: 12px 20px;
+      right: 14px;
+      bottom: 16px;
+    }
+  }
+</style>
+
 </head>
 <body>
 
@@ -54,6 +106,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   <div class="mobile-menu" id="mobile-menu"><a href="index.html" class="m-link">Home</a><a href="services.html" class="m-link">Services</a><a href="about.html" class="m-link">About</a><a href="contact.html" class="m-link">Contact</a><a href="privacy.html" class="m-link">Privacy</a><a href="ccpa.html" class="m-link">California</a><a href="terms.html" class="m-link">Terms</a></div>
 </header>
+
+<!-- ============ FLOATING CONTACT BUTTON ============ -->
+<a href="tel:888 566 4246" class="floating-call-btn">
+  <span class="fc-icon">📞</span> 888 566 4246
+</a>
+
 <main>
 
 <section class="page-hero">
