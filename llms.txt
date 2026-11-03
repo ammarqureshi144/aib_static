@@ -1,0 +1,17 @@
+# AIB Communications
+
+> AIB Communications (managed by Hopkins TEK Services LLC) is an authorized telecommunications sub-dealer helping customers compare and find available Home Internet, TV, Mobile, and Home Security services across top US providers.
+
+## Core Landing Pages
+
+- [Home Page](https://www.aibcommunications.com/index.html): Compare top home internet, TV, mobile, and home security deals from participating providers.
+- [Customer Assistance Desk](https://www.aibcommunications.com/assistance.html): Speak directly with a live agent to compare available plans, check fiber options, and review high bill concerns.
+- [Internet Speed Test](https://www.aibcommunications.com/speed-test.html): Run a free connection speed test and compare faster broadband and fiber plans available at your address.
+- [Smart Home Security](https://www.aibcommunications.com/home-security.html): Compare professionally monitored security systems, smart automation, cameras, and equipment packages.
+
+## Company & Legal Information
+
+- [Contact Us](https://www.aibcommunications.com/contact.html): Get in touch with our customer service team via phone or email.
+- [Privacy Policy](https://www.aibcommunications.com/privacy.html): Information on how customer data is handled and protected.
+- [California Consumer Privacy](https://www.aibcommunications.com/ccpa.html): CCPA privacy rights and state disclosures.
+- [Terms of Service](https://www.aibcommunications.com/terms.html): Operational disclaimers, authorized sub-dealer terms, and provider availability conditions.
