@@ -265,8 +265,21 @@ footer a{text-decoration:none}
 <a class="fab" href="tel:+18885664246" aria-label="Call 888-566-4246"><span class="fi">📞</span><span class="t"><small>Call Now</small>888-566-4246</span></a>
 <script>
 document.getElementById('yr').textContent=new Date().getFullYear();
-var h=document.getElementById('hdr');window.addEventListener('scroll',function(){h.classList.toggle('scrolled',window.scrollY>10)});
-if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});document.querySelectorAll('.rv').forEach(function(el){io.observe(el)}5)}else{document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in')})}
+
+// Optimized scroll listener
+var h = document.getElementById('hdr');
+var ticking = false;
+window.addEventListener('scroll', function() {
+  if (!ticking) {
+    window.requestAnimationFrame(function() {
+      h.classList.toggle('scrolled', window.scrollY > 10);
+      ticking = false;
+    });
+    ticking = true;
+  }
+});
+
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});document.querySelectorAll('.rv').forEach(function(el){io.observe(el)})}else{document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in')})}
 document.querySelectorAll('a[href^="tel:"]').forEach(function(a){a.addEventListener('click',function(){if(typeof gtag==='function'){gtag('event','phone_call_click',{page_path:location.pathname})}})});
 </script>
 </body>
