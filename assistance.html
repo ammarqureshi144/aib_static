@@ -207,7 +207,7 @@ footer a{text-decoration:none}
 </div></header>
 <div class="notice">AIB Communications is an independent authorized sub-dealer. We are not your current provider's customer service.</div>
 <main>
-<section class="hero"><div class="blob b1"></div><div class="blob b2"></div><div class="wrap hero-grid"><div><span class="tag rv">PROVIDER COMPARISON DESK</span><h1 class="rv d1">Tired of High Internet Bills or <span class="red">Slow Speeds?</span></h1><p class="sub rv d2">Speak directly with a live agent to check faster fiber options, compare available plans, and explore ways to lower your monthly rate.</p><ul class="ticks rv d2"><li>Talk to a live agent, not a phone tree</li><li>We check providers serving your address</li><li>Compare promotions against your current bill</li></ul><div class="cta-row rv d3"><a class="btn btn-green ring-g btn-lg" href="tel:+18885664246"><span class="ph">📞</span> Speak to a Live Agent: 888-566-4246</a><a class="btn btn-ghost btn-lg" href="#s1">Learn More ↓</a></div><div class="micro rv d3">Free to call • No obligation • Availability varies by address</div></div><div class="callcard rv d2"><h3>Speak to a Live Agent</h3><p>Tell us your address and what you pay today. We will compare what is available in your area.</p><a class="big" href="tel:+18885664246">📞 888-566-4246</a><a style="width:100%" class="btn btn-red" href="tel:+18885664246"><span class="ph">📞</span> Call Now</a><ul class="mini"><li>Internet slow, dropping or too expensive?</li><li>Moving or setting up a new address?</li><li>Curious whether better plans exist?</li></ul></div></div></section><div class="marq"><div class="mtrack"><span>EarthLink</span><span>Frontier</span><span>Optimum</span><span>Kinetic</span><span>Home Security</span><span>TV Bundles</span><span>Mobile Plans</span><span>EarthLink</span><span>Frontier</span><span>Optimum</span><span>Kinetic</span><span>Home Security</span><span>TV Bundles</span><span>Mobile Plans</span></div></div>
+<section class="hero"><div class="blob b1"></div><div class="blob b2"></div><div class="wrap hero-grid"><div><span class="tag">PROVIDER COMPARISON DESK</span><h1>Tired of High Internet Bills or <span class="red">Slow Speeds?</span></h1><p class="sub">Speak directly with a live agent to check faster fiber options, compare available plans, and explore ways to lower your monthly rate.</p><ul class="ticks"><li>Talk to a live agent, not a phone tree</li><li>We check providers serving your address</li><li>Compare promotions against your current bill</li></ul><div class="cta-row"><a class="btn btn-green ring-g btn-lg" href="tel:+18885664246"><span class="ph">📞</span> Speak to a Live Agent: 888-566-4246</a><a class="btn btn-ghost btn-lg" href="#s1">Learn More ↓</a></div><div class="micro">Free to call • No obligation • Availability varies by address</div></div><div class="callcard"><h3>Speak to a Live Agent</h3><p>Tell us your address and what you pay today. We will compare what is available in your area.</p><a class="big" href="tel:+18885664246">📞 888-566-4246</a><a style="width:100%" class="btn btn-red" href="tel:+18885664246"><span class="ph">📞</span> Call Now</a><ul class="mini"><li>Internet slow, dropping or too expensive?</li><li>Moving or setting up a new address?</li><li>Curious whether better plans exist?</li></ul></div></div></section><div class="marq"><div class="mtrack"><span>EarthLink</span><span>Frontier</span><span>Optimum</span><span>Kinetic</span><span>Home Security</span><span>TV Bundles</span><span>Mobile Plans</span><span>EarthLink</span><span>Frontier</span><span>Optimum</span><span>Kinetic</span><span>Home Security</span><span>TV Bundles</span><span>Mobile Plans</span></div></div>
 
 <section id="s1"><div class="wrap"><div class="head rv"><span class="eyebrow">How We Can Help</span><h2>What Brings You <span class="red">Here Today?</span></h2><p>Pick the situation closest to yours. In every case, one call lets us compare what is available at your address.</p></div><div class="grid g3">
 
@@ -294,4 +294,30 @@ footer a{text-decoration:none}
 <div class="disc"><b>Important Disclosure:</b> AIB Communications is managed by Hopkins TEK Services LLC, an authorized sub-dealer matching customers with available telecommunications, internet, TV, and home security providers in their area through official distribution relationships.</div>
 <div class="fgrid">
 <div><h4>About This Site</h4><p>AIB Communications is not the telecommunications service provider and is not affiliated with, endorsed by, or sponsored by any provider named on this page. Provider names, logos and trademarks belong to their respective owners. Availability, pricing, promotions, speeds, equipment, fees and eligibility vary by location and are subject to change. Services are subject to the applicable provider's terms and conditions. Speed and savings examples are general and not a guarantee of results.</p></div>
-<div class="fc"><h4>Contact</h4><p><a href="
+<div class="fc"><h4>Contact</h4><p><a href="tel:+18885664246">📞 888-566-4246</a><br><a href="mailto:Info@aibcommunications.com">✉ Info@aibcommunications.com</a><br>9411 Philadelphia Rd, Suite R - Room 1-2,<br>Rosedale, Maryland 21237</p></div>
+<div><h4>Legal</h4><div class="flinks"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="ccpa.html">California Privacy Disclosure</a><a href="contact.html">Contact Us</a></div></div>
+</div>
+<div class="copy">&copy; <span id="yr"></span> AIB Communications | Hopkins TEK Services LLC. All rights reserved.</div>
+</div></footer>
+<a class="fab" href="tel:+18885664246" aria-label="Call 888-566-4246"><span class="fi">📞</span><span class="t"><small>Call Now</small>888-566-4246</span></a>
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+
+// Optimized scroll listener
+var h = document.getElementById('hdr');
+var ticking = false;
+window.addEventListener('scroll', function() {
+  if (!ticking) {
+    window.requestAnimationFrame(function() {
+      h.classList.toggle('scrolled', window.scrollY > 10);
+      ticking = false;
+    });
+    ticking = true;
+  }
+});
+
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});document.querySelectorAll('.rv').forEach(function(el){io.observe(el)})}else{document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in')})}
+document.querySelectorAll('a[href^="tel:"]').forEach(function(a){a.addEventListener('click',function(){if(typeof gtag==='function'){gtag('event','phone_call_click',{page_path:location.pathname})}})});
+</script>
+</body>
+</html>
